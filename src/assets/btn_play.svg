@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>分组 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="8-视频播放（交互）" transform="translate(-50.000000, -269.000000)" fill="#FFFFFF">
+            <g id="分组" transform="translate(25.000000, 71.000000)">
+                <g id="分组-3" transform="translate(25.117188, 198.746708)">
+                    <g id="分组-2">
+                        <g id="分组" fill-rule="nonzero" opacity="0.3">
+                            <g id="分组-7">
+                                <g id="分组-5" transform="translate(0.000000, 0.481913)">
+                                    <ellipse id="椭圆形" cx="20.6572266" cy="20.5071188" rx="20.6572266" ry="19.7075974"></ellipse>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="播放" transform="translate(15.185069, 10.493975)">
+                            <path d="M2.37347844,20.7629395 C3.21810416,20.7629395 3.97826813,20.1854515 5.07628184,19.1954705 L12.171151,12.6781126 C13.1847029,11.6881316 13.2691647,10.0381651 12.2556135,9.04819472 L12.171151,8.96569639 L5.83646486,3.4383088 C5.49861511,3.19081382 3.30258769,0.963359012 2.37350566,0.963359012 C1.27549195,0.963359012 0.346404474,1.78834227 0.346404474,2.94331831 L0.346404474,18.7830033 C0.346404474,19.9379794 1.27549195,20.7629626 2.37350566,20.7629626 L2.37347844,20.7629395 Z" id="路径"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

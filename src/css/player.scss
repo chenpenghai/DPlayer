@@ -11,7 +11,7 @@
     svg {
         width: 100%;
         height: 100%;
-        
+
         path,
         circle {
             fill: #fff;
@@ -104,18 +104,18 @@
 
         @media (min-width: 900px) {
             .dplayer-controller-mask {
-                opacity: 0;
+                // opacity: 0;
             }
             .dplayer-controller {
-                opacity: 0;
+                // opacity: 0;
             }
 
             &:hover {
                 .dplayer-controller-mask {
-                    opacity: 1;
+                    // opacity: 1;
                 }
                 .dplayer-controller {
-                    opacity: 1;
+                    // opacity: 1;
                 }
             }
         }

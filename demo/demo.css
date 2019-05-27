@@ -1,3 +1,13 @@
+
+.dplayer-full{
+    display: none !important;
+}
+.dplayer-volume{
+    display: inline-block !important;
+}
+
+
+
 body {
     max-width: 700px;
     margin: 0 auto;

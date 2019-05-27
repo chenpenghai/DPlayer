@@ -1,8 +1,11 @@
-import play from '../assets/play.svg';
-import pause from '../assets/pause.svg';
-import volumeUp from '../assets/volume-up.svg';
-import volumeDown from '../assets/volume-down.svg';
-import volumeOff from '../assets/volume-off.svg';
+import play from '../assets/btn_play.svg';
+import pause from '../assets/btn_pause.svg';
+// import volumeUp from '../assets/volume-up.svg';
+import volumeUp from '../assets/btn_vol.svg';
+// import volumeDown from '../assets/volume-down.svg';
+import volumeDown from '../assets/btn_vol.svg';
+// import volumeOff from '../assets/volume-off.svg';
+import volumeOff from '../assets/btn_vol.svg';
 import full from '../assets/full.svg';
 import fullWeb from '../assets/full-web.svg';
 import setting from '../assets/setting.svg';

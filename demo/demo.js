@@ -58,20 +58,24 @@ function initPlayers () {
     window.dp1 = new DPlayer({
         container: document.getElementById('dplayer1'),
         preload: 'none',
-        screenshot: true,
+        // screenshot: true,
         video: {
-            url: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4',
-            pic: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.png',
-            thumbnails: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara_thumbnails.jpg'
+            url: 'http://h5player.bytedance.com/video/mp4/xgplayer-demo-720p.mp4',
+            pic: 'http://s2.pstatp.com/cdn/expire-1-M/byted-player-videos/1.0.0/poster.jpg',
+            // thumbnails: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara_thumbnails.jpg'
         },
-        subtitle: {
-            url: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.vtt'
-        },
-        danmaku: {
-            id: '9E2E3368B56CDBB4',
-            api: 'https://api.prprpr.me/dplayer/'
-        }
+        // subtitle: {
+        //     url: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.vtt'
+        // },
+        // danmaku: {
+        //     id: '9E2E3368B56CDBB4',
+        //     api: 'https://api.prprpr.me/dplayer/'
+        // }
     });
+
+    // setTimeout(function(){
+    //     dp1.fullScreen.request('web');
+    // },10000)
 
     // dp2
     window.dp2 = new DPlayer({

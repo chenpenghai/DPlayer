@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>分组 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="9—全屏展示" transform="translate(-25.000000, -20.000000)" fill-rule="nonzero">
+            <g id="分组-3" transform="translate(25.000000, 20.000000)">
+                <g id="分组-2">
+                    <circle id="椭圆形" fill-opacity="0.5" fill="#FFFFFF" cx="24.9035294" cy="24.9035294" r="24.9035294"></circle>
+                    <g id="分组" transform="translate(14.234410, 12.451765)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8">
+                        <path d="M0.755877769,8.18769957 L18.2051151,4.34719528" id="路径-7-copy" transform="translate(9.480496, 6.267447) scale(-1, -1) rotate(-30.000000) translate(-9.480496, -6.267447) "></path>
+                        <path d="M0.755877769,20.2382925 L18.2051151,16.3977882" id="路径-7-copy-2" transform="translate(9.480496, 18.318040) scale(-1, 1) rotate(-30.000000) translate(-9.480496, -18.318040) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

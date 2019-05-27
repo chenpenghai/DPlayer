@@ -267,23 +267,40 @@ class Controller {
     }
 
     setAutoHide () {
-        this.show();
-        clearTimeout(this.autoHideTimer);
-        this.autoHideTimer = setTimeout(() => {
-            if (this.player.video.played.length && !this.player.paused && !this.disableAutoHide) {
-                this.hide();
-            }
-        }, 3000);
+        return
+        // this.show();
+        // clearTimeout(this.autoHideTimer);
+        // this.autoHideTimer = setTimeout(() => {
+        //     if (this.player.video.played.length && !this.player.paused && !this.disableAutoHide) {
+        //         this.hide();
+        //     }
+        // }, 3000);
     }
 
     show () {
-        this.player.container.classList.remove('dplayer-hide-controller');
+        return
+        // this.player.container.classList.remove('dplayer-hide-controller');
     }
 
     hide () {
+        return
+        // this.player.container.classList.add('dplayer-hide-controller');
+        // this.player.setting.hide();
+        // this.player.comment && this.player.comment.hide();
+    }
+
+    showController (){
+        this.player.container.classList.remove('dplayer-hide-controller');
+    }
+
+    hideController (){
         this.player.container.classList.add('dplayer-hide-controller');
         this.player.setting.hide();
         this.player.comment && this.player.comment.hide();
+    }
+
+    isShowController (){
+        return !this.player.container.classList.contains('dplayer-hide-controller');
     }
 
     isShow () {
@@ -291,12 +308,13 @@ class Controller {
     }
 
     toggle () {
-        if (this.isShow()) {
-            this.hide();
-        }
-        else {
-            this.show();
-        }
+        return
+        // if (this.isShow()) {
+        //     this.hide();
+        // }
+        // else {
+        //     this.show();
+        // }
     }
 
     destroy () {

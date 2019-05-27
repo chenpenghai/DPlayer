@@ -26,6 +26,19 @@ const instances = [];
 
 class DPlayer {
 
+    showController (){
+        this.controller.showController()
+    }
+
+    hideController (){
+        this.controller.hideController()
+    }
+
+    isShowController (){
+        return  this.controller.isShowController()
+    }
+
+
     /**
      * DPlayer constructor function
      *

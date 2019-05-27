@@ -1,5 +1,5 @@
-const isMobile = /mobile/i.test(window.navigator.userAgent);
-
+const isMobile = (/mobile/i.test(window.navigator.userAgent) || /android/gi.test(navigator.appVersion));
+console.log("Dplayer_isMobile : "+isMobile)
 const utils = {
 
     /**

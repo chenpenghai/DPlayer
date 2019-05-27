@@ -77,6 +77,29 @@
         <button class="dplayer-icon dplayer-play-icon">
             <span class="dplayer-icon-content">{{@ icons.play }}</span>
         </button>
+
+
+        {{ if options.live }}
+        <span class="dplayer-live-badge"><span class="dplayer-live-dot" style="background: {{ options.theme }};"></span>{{ tran('Live') }}</span>
+        {{ /if }}
+    </div>
+    <div class="dplayer-icons dplayer-icons-center">
+        <div class="dplayer-bar-wrap">
+            <div class="dplayer-bar-time hidden">00:00</div>
+            <div class="dplayer-bar-preview"></div>
+            <div class="dplayer-bar">
+                <div class="dplayer-loaded" style="width: 0;"></div>
+                <div class="dplayer-played" style="width: 0; background: {{ options.theme }}">
+                    <span class="dplayer-thumb" style="background: {{ options.theme }}"></span>
+                </div>
+            </div>
+        </div>
+        <span class="dplayer-time">
+            <span class="dplayer-ptime">0:00</span> /
+            <span class="dplayer-dtime">0:00</span>
+        </span>
+    </div>
+    <div class="dplayer-icons dplayer-icons-right">
         <div class="dplayer-volume">
             <button class="dplayer-icon dplayer-volume-icon">
                 <span class="dplayer-icon-content">{{@ icons.volumeDown }}</span>
@@ -89,15 +112,6 @@
                 </div>
             </div>
         </div>
-        <span class="dplayer-time">
-            <span class="dplayer-ptime">0:00</span> /
-            <span class="dplayer-dtime">0:00</span>
-        </span>
-        {{ if options.live }}
-        <span class="dplayer-live-badge"><span class="dplayer-live-dot" style="background: {{ options.theme }};"></span>{{ tran('Live') }}</span>
-        {{ /if }}
-    </div>
-    <div class="dplayer-icons dplayer-icons-right">
         {{ if options.video.quality }}
         <div class="dplayer-quality">
             <button class="dplayer-icon dplayer-quality-icon">{{ options.video.quality[options.video.defaultQuality].name }}</button>
@@ -200,16 +214,7 @@
             </button>
         </div>
     </div>
-    <div class="dplayer-bar-wrap">
-        <div class="dplayer-bar-time hidden">00:00</div>
-        <div class="dplayer-bar-preview"></div>
-        <div class="dplayer-bar">
-            <div class="dplayer-loaded" style="width: 0;"></div>
-            <div class="dplayer-played" style="width: 0; background: {{ options.theme }}">
-                <span class="dplayer-thumb" style="background: {{ options.theme }}"></span>
-            </div>
-        </div>
-    </div>
+
 </div>
 <div class="dplayer-info-panel dplayer-info-panel-hide">
     <div class="dplayer-info-panel-close">[x]</div>
