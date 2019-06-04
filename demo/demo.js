@@ -60,8 +60,8 @@ function initPlayers () {
         preload: 'none',
         // screenshot: true,
         video: {
-            url: 'http://h5player.bytedance.com/video/mp4/xgplayer-demo-720p.mp4',
-            pic: 'http://s2.pstatp.com/cdn/expire-1-M/byted-player-videos/1.0.0/poster.jpg',
+            // url: 'http://h5player.bytedance.com/video/mp4/xgplayer-demo-720p.mp4',
+            // pic: 'http://s2.pstatp.com/cdn/expire-1-M/byted-player-videos/1.0.0/poster.jpg',
             // thumbnails: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara_thumbnails.jpg'
         },
         // subtitle: {

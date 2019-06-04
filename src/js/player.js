@@ -47,7 +47,6 @@ class DPlayer {
      */
     constructor (options) {
         this.options = handleOption(options);
-
         if (this.options.video.quality) {
             this.qualityIndex = this.options.video.defaultQuality;
             this.quality = this.options.video.quality[this.options.video.defaultQuality];
@@ -164,10 +163,10 @@ class DPlayer {
             time = Math.min(time, this.video.duration);
         }
         if (this.video.currentTime < time) {
-            this.notice(`${this.tran('FF')} ${(time - this.video.currentTime).toFixed(0)} ${this.tran('s')}`);
+            // this.notice(`${this.tran('FF')} ${(time - this.video.currentTime).toFixed(0)} ${this.tran('s')}`);
         }
         else if (this.video.currentTime > time) {
-            this.notice(`${this.tran('REW')} ${(this.video.currentTime - time).toFixed(0)} ${this.tran('s')}`);
+            // this.notice(`${this.tran('REW')} ${(this.video.currentTime - time).toFixed(0)} ${this.tran('s')}`);
         }
 
         this.video.currentTime = time;
@@ -252,7 +251,7 @@ class DPlayer {
         if (!isNaN(percentage)) {
             percentage = Math.max(percentage, 0);
             percentage = Math.min(percentage, 1);
-            this.bar.set('volume', percentage, 'width');
+            this.bar.set('volume', percentage, 'height');
             const formatPercentage = `${(percentage * 100).toFixed(0)}%`;
             this.template.volumeBarWrapWrap.dataset.balloon = formatPercentage;
             if (!nostorage) {
@@ -300,7 +299,17 @@ class DPlayer {
     switchVideo (video, danmakuAPI) {
         this.pause();
         this.video.poster = video.pic ? video.pic : '';
-        this.video.src = video.url;
+
+        if (video.quality) {
+            this.qualityIndex = video.defaultQuality;
+            this.quality = video.quality[video.defaultQuality];
+            this.options.video.quality = video.quality;
+            this.video.url = this.quality.url;
+            this.video.src = this.quality.url;
+            this.options.video.url = this.quality.url;
+        }else{
+            this.video.src = video.url;
+        }
         this.initMSE(this.video, video.type || 'auto');
         if (danmakuAPI) {
             this.template.danmakuLoading.style.display = 'block';
@@ -517,7 +526,7 @@ class DPlayer {
         }
         this.switchingQuality = true;
         this.quality = this.options.video.quality[index];
-        this.template.qualityButton.innerHTML = this.quality.name;
+        // this.template.qualityButton.innerHTML = this.quality.name;
 
         const paused = this.video.paused;
         this.video.pause();

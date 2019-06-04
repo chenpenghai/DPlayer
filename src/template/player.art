@@ -74,8 +74,14 @@
         </button>
     </div>
     <div class="dplayer-icons dplayer-icons-left">
+        <button class="dplayer-icon dplayer-pre-icon">
+            <span class="dplayer-icon-content">{{@ icons.preBtn }}</span>
+        </button>
         <button class="dplayer-icon dplayer-play-icon">
             <span class="dplayer-icon-content">{{@ icons.play }}</span>
+        </button>
+        <button class="dplayer-icon dplayer-next-icon">
+            <span class="dplayer-icon-content">{{@ icons.nextBtn }}</span>
         </button>
 
 

@@ -1,5 +1,8 @@
 import play from '../assets/btn_play.svg';
 import pause from '../assets/btn_pause.svg';
+import nextBtn from '../assets/btn_next.svg';
+import preBtn from '../assets/btn_pre.svg';
+
 // import volumeUp from '../assets/volume-up.svg';
 import volumeUp from '../assets/btn_vol.svg';
 // import volumeDown from '../assets/volume-down.svg';
@@ -19,6 +22,8 @@ import subtitle from '../assets/subtitle.svg';
 import loading from '../assets/loading.svg';
 
 const Icons = {
+    nextBtn:nextBtn,
+    preBtn:preBtn,
     play: play,
     pause: pause,
     volumeUp: volumeUp,
